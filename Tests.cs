@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System.Collections.Generic;
 
 namespace GameOfWar
 {
@@ -7,7 +8,8 @@ namespace GameOfWar
         [Test]
         public void Can_test()
         {
-            Assert.Pass();
+            var cards = new List<int>();
+            Assert.That(cards.Count, Is.EqualTo(52));
         }
     }
 }
