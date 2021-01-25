@@ -4,13 +4,18 @@ namespace GameOfWar
 {
     public class Deck
     {
-        public int Count { get; set; }
         public List<int> Cards { get; set; }
-        
 
         public Deck()
         {
-            Count = 52;
+            Cards = new List<int>();
+            for (var i = 2; i < 15; i++)
+            {
+                for (var j = 0; j < 4; j++)
+                {
+                    Cards.Add(i);
+                }
+            }
         }
     }
 }
